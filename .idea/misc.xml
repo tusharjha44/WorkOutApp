@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/circular_progress_bar.xml" value="0.17407407407407408" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/circular_progress_grey.xml" value="0.17407407407407408" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/drawable_radio_group_tab_background.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/drawable_units_tab_selector.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/drawable_units_tab_text_color_selector.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/item_circular_color_accent_backgroubd.xml" value="0.17407407407407408" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/item_circular_color_accent_border.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/item_circular_color_gray_background.xml" value="0.14814814814814814" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/item_circular_thin_ccent_border.xml" value="0.1" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/item_color_accent_background.xml" value="0.23646578140960164" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/drawable/item_color_accent_ripple_background.xml" value="0.23646578140960164" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/layout/activity_bmi.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/layout/activity_exercise.xml" value="0.2" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/layout/activity_finish.xml" value="0.10671039354187689" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/layout/activity_main.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/layout/dialog_custom_back_conformation.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/user/Desktop/Kotlin/7MinuteWorkout/app/src/main/res/layout/item_exercise_status.xml" value="0.1322463768115942" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
