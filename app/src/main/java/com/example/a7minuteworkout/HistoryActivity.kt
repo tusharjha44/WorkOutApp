@@ -22,9 +22,10 @@ class HistoryActivity : AppCompatActivity() {
 
         setSupportActionBar(binding?.toolbarHistoryActivity)
 
-        if(supportActionBar != null){
-            supportActionBar?.setDisplayHomeAsUpEnabled(true)
-            supportActionBar?.title = "History"
+        val actionbar = supportActionBar//actionbar
+        if (actionbar != null) {
+            actionbar.setDisplayHomeAsUpEnabled(true) //set back button
+            actionbar.title = "HISTORY" // Setting a title in the action bar.
         }
 
         binding?.toolbarHistoryActivity?.setNavigationOnClickListener {
@@ -36,10 +37,10 @@ class HistoryActivity : AppCompatActivity() {
 
     }
 
-    private fun getAllCompletedDates(historyDao: HistoryDao){
+    private fun getAllCompletedDates(historyDao: HistoryDao) {
         lifecycleScope.launch {
-            historyDao.fetchAllDates().collect {
-                if(it.isNotEmpty()){
+            historyDao.fetchAllDates().collect { allCompletedDatesList->
+                if (allCompletedDatesList.isNotEmpty()) {
                     binding?.tvHistory?.visibility = View.VISIBLE
                     binding?.rvHistory?.visibility = View.VISIBLE
                     binding?.tvNoDataAvailable?.visibility = View.GONE
@@ -47,22 +48,20 @@ class HistoryActivity : AppCompatActivity() {
                     binding?.rvHistory?.layoutManager = LinearLayoutManager(this@HistoryActivity)
 
                     val dates = ArrayList<String>()
-                    for(date in it){
+                    for (date in allCompletedDatesList){
                         dates.add(date.date)
                     }
-
                     val historyAdapter = HistoryAdapter(ArrayList(dates))
 
                     binding?.rvHistory?.adapter = historyAdapter
-
-                }else{
+                } else {
                     binding?.tvHistory?.visibility = View.GONE
                     binding?.rvHistory?.visibility = View.GONE
                     binding?.tvNoDataAvailable?.visibility = View.VISIBLE
-
                 }
             }
         }
+
     }
 
     override fun onDestroy() {

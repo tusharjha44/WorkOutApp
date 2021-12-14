@@ -2,12 +2,14 @@ package com.example.a7minuteworkout
 
 import androidx.room.Dao
 import androidx.room.Insert
+import androidx.room.OnConflictStrategy.IGNORE
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface HistoryDao {
-    @Insert
+
+    @Insert(onConflict = IGNORE)
     suspend fun insert(historyEntity: HistoryEntity)
 
     @Query("SELECT * FROM `history-table`")
